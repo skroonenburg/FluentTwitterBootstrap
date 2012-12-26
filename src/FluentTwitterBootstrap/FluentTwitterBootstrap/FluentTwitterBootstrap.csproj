@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B29EFBEF-3076-4768-8F9D-40EDC1F424A9}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>FluentTwitterBootstrap</RootNamespace>
+    <AssemblyName>FluentTwitterBootstrap</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Mvc, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Web.Routing" />
+    <Reference Include="System.Web.WebPages, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Dialog\ButtonBuilder.cs" />
+    <Compile Include="Dialog\ButtonTypeConfigurer.cs" />
+    <Compile Include="Dialog\ButtonTypeEnum.cs" />
+    <Compile Include="Dialog\DialogBuilder.cs" />
+    <Compile Include="Dialog\DialogButtonModel.cs" />
+    <Compile Include="Dialog\DialogCommand.cs" />
+    <Compile Include="Dialog\DialogExtensions.cs" />
+    <Compile Include="BootstrapHtmlHelpers.cs" />
+    <Compile Include="Dialog\DialogHtmlStringDecorator.cs" />
+    <Compile Include="Dialog\DialogJsonRenderer.cs" />
+    <Compile Include="Dialog\DialogModel.cs" />
+    <Compile Include="Dialog\IButtonBuilder.cs" />
+    <Compile Include="Dialog\IDialogBuilder.cs" />
+    <Compile Include="Grid\GridBuilder.cs" />
+    <Compile Include="Grid\GridColumnBuilder.cs" />
+    <Compile Include="Grid\GridHtmlStringDecorator.cs" />
+    <Compile Include="Grid\GridModel.cs" />
+    <Compile Include="Grid\GridResult.cs" />
+    <Compile Include="Grid\IGridBuilder.cs" />
+    <Compile Include="Grid\IGridColumnBuilder.cs" />
+    <Compile Include="Grid\ISortDirectionConfigurer.cs" />
+    <Compile Include="Grid\PagingHelpers.cs" />
+    <Compile Include="Grid\PagingOption.cs" />
+    <Compile Include="Popover\IPopoverBuilder.cs" />
+    <Compile Include="Popover\IPopoverPositionConfigurer.cs" />
+    <Compile Include="Popover\PopoverBuilder.cs" />
+    <Compile Include="Popover\PopoverHtmlStringDecorator.cs" />
+    <Compile Include="Popover\PopoverModel.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

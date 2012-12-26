@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package>
+  <metadata>
+    <id>Fluent Twitter Bootstrap</id>
+    <version>0.1</version>
+    <authors>Sam Kroonenburg</authors>
+    <description>Fluent helpers for C# to rapidly build grids, dialog, alerts and popovers in Twitter Bootstrap.</description>
+    <language>en-US</language>
+    <projectUrl>https://github.com/skroonenburg/FluentTwitterBootstrap</projectUrl>
+    <tags>twitter bootstrap fluent grid dialog alert popover</tags>
+  </metadata>
+  <files>
+    <file src="..\bin\Release\FluentTwitterBootstrap.dll" target="lib\40\FluentTwitterBootstrap.dll" />
+    <file src="web.config.transform" target="Content\web.config.transform" />
+  </files>
+</package>
