@@ -12,5 +12,6 @@
   <files>
     <file src="..\bin\Release\FluentTwitterBootstrap.dll" target="lib\40\FluentTwitterBootstrap.dll" />
     <file src="web.config.transform" target="Content\web.config.transform" />
+    <file src="Content\Scripts\bootstrap.mvc.helpers.js" target="Content\Scripts" />
   </files>
 </package>

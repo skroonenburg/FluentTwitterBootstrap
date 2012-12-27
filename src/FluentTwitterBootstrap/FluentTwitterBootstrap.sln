@@ -9,6 +9,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "nuspec", "nuspec", "{3DD7BC
 		FluentTwitterBootstrap\nuspec\web.config.transform = FluentTwitterBootstrap\nuspec\web.config.transform
 	EndProjectSection
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Content", "Content", "{8DA37C76-4002-4963-AF6E-E09E0DF45CA0}"
+	ProjectSection(SolutionItems) = preProject
+		FluentTwitterBootstrap\nuspec\Content\bootstrap.mvc.helpers.js = FluentTwitterBootstrap\nuspec\Content\bootstrap.mvc.helpers.js
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -22,5 +27,8 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{8DA37C76-4002-4963-AF6E-E09E0DF45CA0} = {3DD7BC9D-C382-4E48-A8D3-47FB00074AB0}
 	EndGlobalSection
 EndGlobal
